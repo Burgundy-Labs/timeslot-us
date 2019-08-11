@@ -43,7 +43,7 @@
 .hero-media-illustration {
 	position: absolute;
 	top: -10%;
-	left: -15px;
+	left: 100px;
 
 	img,
 	svg {
@@ -60,7 +60,7 @@
 	box-shadow: 48px 16px 48px rgba(color(bg, 1i), 0.12);
 	border-radius: 4px;
 	transform: perspective(800px) rotateY(10deg);
-
+	margin-left: 75px;
 	.lights-off & {
 		box-shadow: 48px 16px 48px rgba(darken(color(bg, 1i), 35%), 0.2);
 	}
@@ -142,7 +142,7 @@
 		display: block;
 		position: absolute;
 		top: -168px;
-		left: -722px;
+		left: -630px;
 		width: 1440px;
 		height: 324px;
 	}
