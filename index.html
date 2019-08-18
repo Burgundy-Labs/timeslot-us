@@ -12,9 +12,20 @@
 	<link rel="icon" 
       type="image/png" 
       href="favicon.png">
+	  <!-- MailerLite Universal -->
+	<script>
+	(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+	var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+	f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+	var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+	_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+	var ml_account = ml('accounts', '1404952', 'f9t4u2o2j7', 'load');
+	</script>
+	<!-- End MailerLite Universal -->
 </head>
 <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
+	<div class="body-wrap boxed-container">
   <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
@@ -36,6 +47,9 @@
                          <h1 class=""><img src="dist/images/timeslot.png" alt="TimeSlot Logo"/></h1>
 	                        <h1 class="hero-title mt-0">Meet TimeSlot</h1>
 	                        <p class="hero-paragraph">A student-focused appointment scheduling software for learning centers and writing centers of all sizes.</p>
+								<a style="display:block;text-align:center;" href="javascript:;" onclick="ml_account('webforms', '1454870', 'v7a4j2', 'show')">
+											Get One Month Free!
+											</a>
 	                        <div class="hero-cta">
                                 <a class="button button-secondary" href="#">Sign Up</a>
 								<a class="button button-primary" href="#">Log in to TimeSlot</a>
@@ -191,8 +205,12 @@
 												</li>
 											</ul>
 										</div>
-										<div class="pricing-table-cta">
+										<div class="pricing-table-cta">						
 											<a class="button button-primary button-shadow button-block" href="#">Sign Up Now</a>
+											<br/>
+											<a style="display:block;text-align:center;" href="javascript:;" onclick="ml_account('webforms', '1454870', 'v7a4j2', 'show')">
+											Get One Month Free!
+											</a>
 										</div>
 									</div>
 								</div>
