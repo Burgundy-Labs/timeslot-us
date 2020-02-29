@@ -1,187 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      description="TimeSlot - learning center and writing ceneter scheduling software."
-    />
-    <title>TimeSlot</title>
-    <!-- Plugins CSS -->
-    <link
-      rel="stylesheet"
-      href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <!-- Pixel Code for https://66analytics.com/demo/ -->
-    <script async src="https://66analytics.com/demo/pixel/X2l7kChHh3nsUB1U"></script>
-    <!-- END Pixel Code -->
-    <!-- fonts -->
-    <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/ep-font.css" />
-    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="./css/settings.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="//code.tidio.co/edihdcvizyprqbi0c6xihfirwagb7rms.js"></script>
-    <!-- MailerLite Universal -->
-    <script>
-      (function(m, a, i, l, e, r) {
-        m["MailerLiteObject"] = e;
-        function f() {
-          var c = { a: arguments, q: [] };
-          var r = this.push(c);
-          return "number" != typeof r ? r : f.bind(c.q);
-        }
-        f.q = f.q || [];
-        m[e] = m[e] || f.bind(f.q);
-        m[e].q = m[e].q || f.q;
-        r = a.createElement(i);
-        var _ = a.getElementsByTagName(i)[0];
-        r.async = 1;
-        r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
-        _.parentNode.insertBefore(r, _);
-      })(
-        window,
-        document,
-        "script",
-        "https://static.mailerlite.com/js/universal.js",
-        "ml"
-      );
 
-      var ml_account = ml("accounts", "1404952", "f9t4u2o2j7", "load");
-    </script>
-    <!-- End MailerLite Universal -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109706737-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta description="TimeSlot - learning center and writing ceneter scheduling software." />
+  <title>TimeSlot</title>
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <!-- Pixel Code for https://66analytics.com/demo/ -->
+  <script async src="https://66analytics.com/demo/pixel/X2l7kChHh3nsUB1U"></script>
+  <!-- END Pixel Code -->
+  <!-- fonts -->
+  <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/ep-font.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/settings.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="//code.tidio.co/edihdcvizyprqbi0c6xihfirwagb7rms.js"></script>
+  <!-- MailerLite Universal -->
+  <script>
+    (function (m, a, i, l, e, r) {
+      m["MailerLiteObject"] = e;
+      function f() {
+        var c = { a: arguments, q: [] };
+        var r = this.push(c);
+        return "number" != typeof r ? r : f.bind(c.q);
+      }
+      f.q = f.q || [];
+      m[e] = m[e] || f.bind(f.q);
+      m[e].q = m[e].q || f.q;
+      r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0];
+      r.async = 1;
+      r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
+      _.parentNode.insertBefore(r, _);
+    })(
+      window,
+      document,
+      "script",
+      "https://static.mailerlite.com/js/universal.js",
+      "ml"
+    );
 
-  gtag('config', 'UA-109706737-4');
-</script>
-  </head>
-  <body>
-    <div class="site-wrapper">
-      <!-- Site Header -->
-      <header class="site-header">
-        <div
-          class="alert alert-primary alert-dismissible fade show pb-0 mb-0"
-          role="alert"
-        >
-          <p>
-            For a limited time, use code: <b>HELLOTIMESLOT</b> for 50% off your
-            first year (annual subscription only)!
-          </p>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="alert"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
+    var ml_account = ml("accounts", "1404952", "f9t4u2o2j7", "load");
+  </script>
+  <!-- End MailerLite Universal -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109706737-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109706737-4');
+  </script>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="alert alert-primary alert-dismissible fade show pb-0 mb-0" role="alert">
+        <p>
+          For a limited time, use code: <b>HELLOTIMESLOT</b> for 50% off your
+          first year (annual subscription only)!
+        </p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center position-relative">
+          <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+            <div class="brand">
+              <img src="image/timeslot.png" alt="TimeSlot Logo" />
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-6 col-lg-7 offset-lg-1 col-xl-6 offset-xl-2 order-lg-2 position-static">
+            <div class="main-navigation">
+              <ul class="main-menu">
+                <li class="menu-item has-dropdown"></li>
+                <li class="menu-item "><a href="#features">Features</a></li>
+                <li class="menu-item"><a href="#pricing">Pricing</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu"></div>
+          </div>
         </div>
-        <div class="container">
-          <div
-            class="row justify-content-center align-items-center position-relative"
-          >
-            <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
-              <div class="brand">
-                <img src="image/timeslot.png" alt="TimeSlot Logo" />
+      </div>
+    </header>
+    <!-- Hero-Area starts -->
+    <section class="hero-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xl-5 order-2 order-md-1">
+            <div class="hero-content">
+              <h1>The last learning center software you'll need.</h1>
+              <p>
+                TimeSlot handles scheduling, reminders, reports, analytics,
+                check-in stations, user management, and so much more.
+              </p>
+              <div class="hero-btn">
+                <a target="_blank" href="https://demo.timeslot.us" class="btn btn-success">TimeSlot Demo</a><br />
+              </div>
+              <div class="hero-btn">
+                <a href="https://app.timeslot.us" class="btn btn-warning">Log In to TimeSlot</a>
+                <a href="https://app.timeslot.us/signup" class="btn btn-large btn-primary">Purchase TimeSlot</a>
               </div>
             </div>
+          </div>
 
-            <div
-              class="col-sm-2 col-6 col-lg-7 offset-lg-1 col-xl-6 offset-xl-2 order-lg-2 position-static"
-            >
-              <div class="main-navigation">
-                <ul class="main-menu">
-                  <li class="menu-item has-dropdown"></li>
-                  <li class="menu-item "><a href="#features">Features</a></li>
-                  <li class="menu-item"><a href="#pricing">Pricing</a></li>
-                  <li class="menu-item"><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-              <div class="mobile-menu"></div>
-            </div>
+          <div class="col-lg-6 col-md-6 col-xl-7 order-1 order-md-2 mt-5 pt-5">
+            <video width="100%" controls poster="image/promo.gif">
+              <source src="image/promo.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-      </header>
-      <!-- Hero-Area starts -->
-      <section class="hero-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-xl-5 order-2 order-md-1">
-              <div class="hero-content">
-                <h1>The last learning center software you'll need.</h1>
-                <p>
-                  TimeSlot handles scheduling, reminders, reports, analytics,
-                  check-in stations, user management, and so much more.
-                </p>
-                <div class="hero-btn">
-                  <a
-                    href="https://app.timeslot.us/signup"
-                    class="btn btn-large btn-primary"
-                    >Purchase TimeSlot</a
-                  ><br />
-                </div>
-                <div class="hero-btn">
-                  <a href="https://app.timeslot.us" class="btn btn-warning"
-                    >Log In to TimeSlot</a
-                  >
-                  <a
-                    target="_blank"
-                    href="https://demo.timeslot.us"
-                    class="btn btn-dark"
-                    >TimeSlot Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-6 col-md-6 col-xl-7 order-1 order-md-2 mt-5 pt-5"
-            >
-              <video width="100%" controls poster="image/promo.gif">
-                <source src="image/promo.mp4" type="video/mp4" />
-              </video>
-            </div>
+      </div>
+    </section>
+    <!-- Clients starts -->
+    <section class="client-section">
+      <div class="container">
+        <div class="client-title">
+          <br />
+          <h2>TimeSlot is used by the following universities & colleges:</h2>
+        </div>
+        <div class="client-brand-wrapper">
+          <div class="single-brand">
+            <img src="image/mtu.png" width="250" alt="Michigan Technological University" />
+          </div>
+          <div class="single-brand">
+            <h6>
+              <small>Check out our demo & see how we can supercharge your learning
+                center!</small>
+            </h6>
           </div>
         </div>
-      </section>
-      <!-- Clients starts -->
-      <section class="client-section">
-        <div class="container">
-          <div class="client-title">
-            <br />
-            <h2>TimeSlot is used by the following universities & colleges:</h2>
-          </div>
-          <div class="client-brand-wrapper">
-            <div class="single-brand">
-              <img
-                src="image/mtu.png"
-                width="250"
-                alt="Michigan Technological University"
-              />
-            </div>
-            <div class="single-brand">
-              <h6>
-                <small
-                  >Check out our demo & see how we can supercharge your learning
-                  center!</small
-                >
-              </h6>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About starts -->
+    <!-- About starts -->
 
-      <!-- <section class="about-section-01">
+    <!-- <section class="about-section-01">
         <div class="container">
           <div class="about-shape shape">
             <img src="image/about-left-shape.svg" alt="" />
@@ -240,259 +206,227 @@
         </div>
       </section> -->
 
-      <!-- Feature starts -->
+    <!-- Feature starts -->
 
-      <section class="feature-section" id="features">
-        <div class="container position-relative">
-          <!-- <div class="shape feature-shape">
+    <section class="feature-section" id="features">
+      <div class="container position-relative">
+        <!-- <div class="shape feature-shape">
             <img src="./image/feature-bg-2.svg" alt="" />
           </div> -->
-          <div class="row mb-d-30 shape-bg">
-            <div class="shape-half test1"></div>
-            <div class="shape-half test2"></div>
-            <div
-              class="col-md-6 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 mb--30"
-            >
-              <div class="feature-widget">
-                <div class="widget-icon">
-                  <i class="icon icon-heart-2"></i>
-                </div>
-                <div class="content">
-                  <h5>User Experience</h5>
-                  <p>
-                    TimeSlot was made by students, for students, with usability
-                    at it's heart. We constantly work with learning center
-                    administrators, students, and tutors to add features and
-                    improve TimeSlot. Our goal is to encourage the use and
-                    improvement of writing centers & learning centers, and take
-                    away some of the stress from administrators and directors.
-                    <b
-                      >We roll out new features and fixes roughly every three
-                      weeks.</b
-                    >
-                  </p>
-                </div>
+        <div class="row mb-d-30 shape-bg">
+          <div class="shape-half test1"></div>
+          <div class="shape-half test2"></div>
+          <div class="col-md-6 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-heart-2"></i>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-5 mb--30">
-              <div class="feature-widget">
-                <div class="widget-icon">
-                  <i class="icon icon-tag-content"></i>
-                </div>
-                <div class="content">
-                  <h5>Useful Features</h5>
-                  <ul class="text-light">
-                    <li>Online Collaborative Tools</li>
-                    <li>Multiple locations</li>
-                    <li>Daily Viewer</li>
-                    <li>Appointment Feedback</li>
-                    <li>Easy, intuitive, scheduling</li>
-                    <li>User management</li>
-                    <li>Google Calendar integration</li>
-                    <li>Custom appointment types & services</li>
-                    <li>Color coded appointment types</li>
-                    <li><b>+ More being added constantly</b></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 mb--30"
-            >
-              <div class="feature-widget">
-                <div class="widget-icon">
-                  <i class="icon icon-book-open-2"></i>
-                </div>
-                <div class="content">
-                  <h5>No Limits</h5>
-                  <p>
-                    We're an open book when it comes to what we offer. Our
-                    prices are simple, there's no caps on users, appointments,
-                    or locations, and we don't sell or use student/center data
-                    to third parties.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-5 mb--30">
-              <div class="feature-widget">
-                <div class="widget-icon">
-                  <i class="icon icon-smile"></i>
-                </div>
-                <div class="content">
-                  <h5>Easy to Use</h5>
-                  <p>
-                    Don't take our word for it, check out our demo & ask us if
-                    you have any questions!
-                  </p>
-                  <hr />
-                  <a
-                    href="https://demo.timeslot.us"
-                    target="_blank"
-                    class="btn btn-light"
-                    >TimeSlot Demo 👉</a
-                  >
-                </div>
+              <div class="content">
+                <h5>User Experience</h5>
+                <p>
+                  TimeSlot was made by students, for students, with usability
+                  at it's heart. We constantly work with learning center
+                  administrators, students, and tutors to add features and
+                  improve TimeSlot. Our goal is to encourage the use and
+                  improvement of writing centers & learning centers, and take
+                  away some of the stress from administrators and directors.
+                  <b>We roll out new features and fixes roughly every three
+                    weeks.</b>
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Pricing section starts -->
-      <section class="pricing-section" id="pricing">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-7 col-md-9">
-              <div class="section-title">
-                <h2>Simple pricing</h2>
+          <div class="col-md-6 col-lg-5 col-xl-5 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-tag-content"></i>
+              </div>
+              <div class="content">
+                <h5>Useful Features</h5>
+                <ul class="text-light">
+                  <li>Online Collaborative Tools</li>
+                  <li>Multiple locations</li>
+                  <li>Daily Viewer</li>
+                  <li>Appointment Feedback</li>
+                  <li>Easy, intuitive, scheduling</li>
+                  <li>User management</li>
+                  <li>Google Calendar integration</li>
+                  <li>Custom appointment types & services</li>
+                  <li>Color coded appointment types</li>
+                  <li><b>+ More being added constantly</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-book-open-2"></i>
+              </div>
+              <div class="content">
+                <h5>No Limits</h5>
                 <p>
-                  We offer monthly & yearly subscriptions, with everything
-                  included.
+                  We're an open book when it comes to what we offer. Our
+                  prices are simple, there's no caps on users, appointments,
+                  or locations, and we don't sell or use student/center data
+                  to third parties.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-5 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-smile"></i>
+              </div>
+              <div class="content">
+                <h5>Easy to Use</h5>
+                <p>
+                  Don't take our word for it, check out our demo & ask us if
+                  you have any questions!
                 </p>
                 <hr />
-                <small>For a limited time, use code:<br /></small>
-                <h3>
-                  HELLOTIMESLOT
-                </h3>
-                <small>
-                  At checkout for 50% off your first annual TimeSlot
-                  subscription ($350 savings)!
-                </small>
+                <a href="https://demo.timeslot.us" target="_blank" class="btn btn-light">TimeSlot Demo 👉</a>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters ">
-            <div class="col-12 d-flex justify-content-center">
-              <div
-                data-tab-target="#pricing-tab"
-                class="btn--toggle btn2--toggle "
-              >
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider round"></span>
-                  <p>Monthly</p>
-                  <p>Yearly</p>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="custom-tab-wrapper monthly" id="pricing-tab">
-            <div class="row justify-content-center">
-              <div class="col-auto align-self-center">
-                <div class="pricing-card active">
-                  <div class="card-head">
-                    <p class="pricing-name">TimeSlot</p>
-                    <h1 class="price" data-monthly="$60" data-yearly="$700">
-                      $60
-                    </h1>
-                    <span
-                      data-monthly="Per Month"
-                      data-yearly="Per Year"
-                      class="month"
-                      >Per month</span
-                    >
-                  </div>
-                  <ul class="pricing-list">
-                    <li class="list-group-item">
-                      Unlimited users, appointments, locations, and terms
-                    </li>
-                    <li class="list-group-item">
-                      Hosted by us, securely, with minimal downtime
-                    </li>
-                    <li class="list-group-item">Full customer support</li>
-                    <li class="list-group-item">
-                      Updates roughly every three weeks
-                    </li>
-                    <li>
-                      <a
-                        href="https://app.timeslot.us/signup"
-                        class="pricing-btn"
-                        >Sign Up for TimeSlot</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA starts -->
-      <div class="cta-section" id="contact">
-        <div class="container cta-shapes-wrapper">
-          <div class="shape cta-shapes">
-            <img src="./image/cta-bg.svg" alt="" />
-            <div class="shape-inner-1">
-              <img src="./image/cta-shape1.svg" alt="" />
-            </div>
-            <div class="shape-inner-2">
-              <img src="./image/cta-shape2.svg" alt="" />
-            </div>
-          </div>
-          <div class="cta-content-wrapper">
-            <h2>Questions?</h2>
-            <a href="mailto:contact@burgundylabs.com" class="btn btn-warning"
-              >contact@burgundylabs.com</a
-            >
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Footer Section -->
-      <div class="footer-section">
-        <div class="container margin-decrese">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-margin">
-              <span class="footer-title-sm">Additional Links</span>
-              <div class="row">
-                <div class="col-lg-7 col-8">
-                  <ul class="footer-list">
-                    <li>
-                      <a href="mailto:contact@burgundylabs.com"
-                        >contact@burgundylabs.com</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://demo.timeslot.us">TimeSlot Demo</a>
-                    </li>
-                    <li><a href="https://app.timeslot.us">TimeSlot App</a></li>
-                    <li>
-                      <a href="https://burgundylabs.com"
-                        >&copy; Burgundy Labs</a
-                      >
-                    </li>
-                  </ul>
+    <!-- Pricing section starts -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7 col-md-9">
+            <div class="section-title">
+              <h2>Simple pricing</h2>
+              <p>
+                We offer monthly & yearly subscriptions, with everything
+                included.
+              </p>
+              <hr />
+              <small>For a limited time, use code:<br /></small>
+              <h3>
+                HELLOTIMESLOT
+              </h3>
+              <small>
+                At checkout for 50% off your first annual TimeSlot
+                subscription ($350 savings)!
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters ">
+          <div class="col-12 d-flex justify-content-center">
+            <div data-tab-target="#pricing-tab" class="btn--toggle btn2--toggle ">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+                <p>Monthly</p>
+                <p>Yearly</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="custom-tab-wrapper monthly" id="pricing-tab">
+          <div class="row justify-content-center">
+            <div class="col-auto align-self-center">
+              <div class="pricing-card active">
+                <div class="card-head">
+                  <p class="pricing-name">TimeSlot</p>
+                  <h1 class="price" data-monthly="$60" data-yearly="$700">
+                    $60
+                  </h1>
+                  <span data-monthly="Per Month" data-yearly="Per Year" class="month">Per month</span>
                 </div>
+                <ul class="pricing-list">
+                  <li class="list-group-item">
+                    Unlimited users, appointments, locations, and terms
+                  </li>
+                  <li class="list-group-item">
+                    Hosted by us, securely, with minimal downtime
+                  </li>
+                  <li class="list-group-item">Full customer support</li>
+                  <li class="list-group-item">
+                    Updates roughly every three weeks
+                  </li>
+                  <li>
+                    <a href="https://app.timeslot.us/signup" class="pricing-btn">Sign Up for TimeSlot</a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="col-lg-5 offset-xl-1 col-margin">
-              <div class="footer-newsletter-box">
-                <span class="footer-title-sm">Subscribe to our newsletter</span>
-                <p>
-                  We ocassionally send out update logs and opportunities for
-                  research.
-                </p>
-                <a
-                  class="btn btn-dark"
-                  href="javascript:;"
-                  onclick="ml_account('webforms', '1454870', 'v7a4j2', 'show')"
-                >
-                  Join our newsletter!
-                </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA starts -->
+    <div class="cta-section" id="contact">
+      <div class="container cta-shapes-wrapper">
+        <div class="shape cta-shapes">
+          <img src="./image/cta-bg.svg" alt="" />
+          <div class="shape-inner-1">
+            <img src="./image/cta-shape1.svg" alt="" />
+          </div>
+          <div class="shape-inner-2">
+            <img src="./image/cta-shape2.svg" alt="" />
+          </div>
+        </div>
+        <div class="cta-content-wrapper">
+          <h2>Questions?</h2>
+          <a href="mailto:contact@burgundylabs.com" class="btn btn-warning">contact@burgundylabs.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+      <div class="container margin-decrese">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-margin">
+            <span class="footer-title-sm">Additional Links</span>
+            <div class="row">
+              <div class="col-lg-7 col-8">
+                <ul class="footer-list">
+                  <li>
+                    <a href="mailto:contact@burgundylabs.com">contact@burgundylabs.com</a>
+                  </li>
+                  <li>
+                    <a href="https://demo.timeslot.us">TimeSlot Demo</a>
+                  </li>
+                  <li><a href="https://app.timeslot.us">TimeSlot App</a></li>
+                  <li>
+                    <a href="https://burgundylabs.com">&copy; Burgundy Labs</a>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-xl-1 col-margin">
+            <div class="footer-newsletter-box">
+              <span class="footer-title-sm">Subscribe to our newsletter</span>
+              <p>
+                We ocassionally send out update logs and opportunities for
+                research.
+              </p>
+              <a class="btn btn-dark" href="javascript:;" onclick="ml_account('webforms', '1454870', 'v7a4j2', 'show')">
+                Join our newsletter!
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Vendor JS-->
-    <script src="./plugins/jquery/jquery.min.js"></script>
-    <script src="./plugins/jquery/jquery-migrate.min.js"></script>
-    <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
-    <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
-    <!-- Plugins JS -->
-    <script src="./js/active.js"></script>
-  </body>
+  </div>
+  <!-- Vendor JS-->
+  <script src="./plugins/jquery/jquery.min.js"></script>
+  <script src="./plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
+  <!-- Plugins JS -->
+  <script src="./js/active.js"></script>
+</body>
+
 </html>
